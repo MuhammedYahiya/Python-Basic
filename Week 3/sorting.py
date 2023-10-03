@@ -7,4 +7,8 @@ for i in range(n):
 
 for i in range(len(array)):
     for j in range(i+1,len(array)):
-        if array[i] < 
+        if array[i] < array[j]:
+            array[i],array[j] = array[j],array[i]
+
+        
+print(array,end="")
